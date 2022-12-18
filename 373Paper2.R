@@ -1,5 +1,7 @@
 library(readxl)
-tempdata <- read_excel("Desktop/files/academic/college/2022-2023/STATS 371/Homework /tempdata.xlsx")
+tempdata <- read_excel("tempdata.xlsx")
+
+#TEMPERATURE ANOMALIES
 
 par(mfrow=c(1, 2))
 plot(tempdata$Year, tempdata$Anomaly, cex=0.1, pch=19, col="blue",
@@ -13,7 +15,8 @@ plot(tempdata$Year, tempdata$Anomaly, cex=0.1, pch=19, col="blue",
     abline(h=-0.1, lwd=1, lty=3, col="maroon")
   lines.default(tempdata$Year, tempdata$Anomaly, col="corn flower blue",lwd=0.7)
   
-  
+#CO2 PPM
+
   plot(tempdata$yr, tempdata$ppm, cex=0.1, pch=19, col="dark red",
   lines.default(tempdata$yr, tempdata$ppm, col="red", lwd=0.7),
        cex.main=0.8,
@@ -22,4 +25,3 @@ plot(tempdata$Year, tempdata$Anomaly, cex=0.1, pch=19, col="blue",
        main="Atmospheric CO2 Concentrations",
        xlab="Year",
        ylab="CO2 PPM")
-  
