@@ -1,4 +1,4 @@
-Soil science student, interested in climate dynamics and Earth system science.
+Soil Science MS @ UW Madison
 
 <!---
 efreed1/efreed1 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
